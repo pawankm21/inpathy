@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./Home";
 import Meditate from "./Meditate";
 import Tips from "./Tips";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (

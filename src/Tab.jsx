@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -105,7 +106,7 @@ export default function Example() {
                       <li>{post.shareCount} shares</li>
                     </ul>
 
-                    <a
+                    <Link
                       href="#"
                       className={classNames(
                         "absolute inset-0 rounded-md",
