@@ -2,24 +2,29 @@ import React from 'react'
 
 function Post() {
     return (
-      <div className="lg:w-1/2 rounded-lg m-2 mt-4 mb-4 p-3 bg-white">
-        <div className="w-1/2">
+      <div className="lg:w-2/3 rounded-lg lg:ml-20 mt-4 mb-4 bg-white shadow-2xl ml-10">
+        <div className="w-1/2  p-3">
           <img
             src="
                 https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            className="w-36 h-36 rounded-full float-left m-2"
+            className="w-24 h-24 object-cover rounded-full  m-3"
             alt=""
           />
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga
-          veniam harum aut quaerat perferendis consectetur. Totam, voluptatibus
-          animi. Officiis ratione sunt quidem animi laudantium aperiam sint,
-          magnam vel nostrum?
-        </p>
-        <button>like</button>
-        <button> save</button>
-        <button>share</button>
+        <div className="pl-5 pr-5 p-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga
+            veniam harum aut quaerat perferendis consectetur. Totam,
+            voluptatibus animi. Officiis ratione sunt quidem animi laudantium
+            aperiam sint, magnam vel nostrum?
+                </p>
+          
+          <div className=" w-1/2 lg:ml-96">
+            <button className="m-2 ">like</button>
+            <button className="m-2 "> save</button>
+            <button className="m-2 ">share</button>
+          </div>
+        </div>
       </div>
     );
 }
