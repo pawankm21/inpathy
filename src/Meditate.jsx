@@ -61,7 +61,7 @@ function Meditate() {
           {stop ? (
             <div className="flex flex-col my-auto items-center relative bottom-24 ">
               <Tab></Tab>
-              <button className="bg-green-500 p-2 rounded-lg focus:ring-4 ring-green-900 mt-3 text-green-900">
+              <button className="bg-green-500 p-2 rounded-lg focus:ring-4 shadow-lg ring-green-900 mt-3 text-green-900">
                 Go to chat{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
