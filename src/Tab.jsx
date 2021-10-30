@@ -15,6 +15,7 @@ export default function Example() {
         date: "5h ago",
         commentCount: 5,
         shareCount: 2,
+        link: "https://www.youtube.com",
       },
       {
         id: 2,
@@ -22,6 +23,7 @@ export default function Example() {
         date: "2h ago",
         commentCount: 3,
         shareCount: 2,
+        link: "https://www.youtube.com",
       },
     ],
     Resources: [
@@ -31,6 +33,7 @@ export default function Example() {
         date: "Jan 7",
         commentCount: 29,
         shareCount: 16,
+        link: "https://www.youtube.com",
       },
       {
         id: 2,
@@ -38,9 +41,9 @@ export default function Example() {
         date: "Mar 19",
         commentCount: 24,
         shareCount: 12,
+        link: "https://www.youtube.com",
       },
     ],
-    
   });
 
   return (
@@ -81,7 +84,11 @@ export default function Example() {
                       className="relative p-3 rounded-md hover:bg-coolGray-100"
                     >
                       <h3 className="text-lg font-medium leading-5">
-                        {post.title}
+                        <a href={post.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >{post.title}</a>
+                        
                       </h3>
 
                       <ul className="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500">
@@ -92,10 +99,9 @@ export default function Example() {
                         <li>{post.shareCount} shares</li>
                       </ul>
 
-                      <Link
-                        href="#"
+                      <section
                         className={classNames(
-                          "absolute inset-0 rounded-md",
+                          "absolute inset-0 rounded-md sr-only",
                           "focus:z-10 focus:outline-none focus:ring-2 ring-blue-400"
                         )}
                       />

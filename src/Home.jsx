@@ -1,8 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 function Home() {
+  const history = useHistory();
   function handleClick() {
-   window.location.href = "https://www.inpathy.com/";
+    history.push("/meditate")
   }
   return (
     <div className=" flex flex-col h-screen my-auto items-center bg-blue-400">

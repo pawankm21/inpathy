@@ -32,7 +32,7 @@ function Tips() {
             Posts
           </span>
           <button className="m-0 relative bottom-4 bg-green-400 rounded-2xl shadow-xl pl-3 pr-3 p-2 border-2 border-green-700 md:left-96 hover:scale-110 transform duration-500 ease-in-out ">
-         Create Post
+            Create Post
           </button>
         </h1>
         <ScrollContainer className=" bg-gradient-to-r from-blue-500 to-blue-800 w-full grid grid-col-1 md:h-1/2 lg:h-1/2 border-blue-900 border-4 ">

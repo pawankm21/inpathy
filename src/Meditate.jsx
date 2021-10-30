@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Tab from "./Tab";
+import {useHistory} from 'react-router-dom'
 function Meditate() {
   const [progress, setProgress] = useState(0);
   const [stop, setStop] = useState(false);
+  const history = useHistory()
   // progress is a number between 0 and 100
   useEffect(() => {
     let interval = null;
@@ -61,7 +63,11 @@ function Meditate() {
           {stop ? (
             <div className="flex flex-col my-auto items-center relative bottom-24 ">
               <Tab></Tab>
-              <button className="bg-green-500 p-2 rounded-lg focus:ring-4 shadow-lg ring-green-900 mt-3 text-green-900">
+              <button className="bg-green-500 p-2 rounded-lg focus:ring-4 shadow-lg ring-green-900 mt-3 text-green-900"
+                onClick={(e) => {
+                  history.push('/tips')
+                }}
+              >
                 Go to chat{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
