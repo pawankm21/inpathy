@@ -7,7 +7,7 @@ function Meditate() {
   const [progress, setProgress] = useState(0);
   const [stop, setStop] = useState(false);
   const history = useHistory()
-  // progress is a number between 0 and 100
+
   useEffect(() => {
     let interval = null;
     if (progress === 110) {
