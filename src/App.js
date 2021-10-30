@@ -6,6 +6,7 @@ import Tips from "./Tips";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Login from "./Login";
+import Register from "./Register";
 function App() {
   const [imgUrl, setImgUrl] = useState("/images/campfire_vector.jpg");
   return (
@@ -17,11 +18,12 @@ function App() {
         setImgUrl={setImgUrl}
       />
         </div>
+        <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Home} />
         <Route path="/meditate" component={Meditate} />
         <Route path="/tips" component={Tips} />
+        <Route exact path ="/register" component={Register} />
       </div>
-      <Login />
     </Router>
   );
 }

@@ -1,3 +1,4 @@
+import { HeartIcon, ShareIcon,BookmarkIcon } from '@heroicons/react/solid';
 import React from 'react'
 
 function Post() {
@@ -20,9 +21,17 @@ function Post() {
                 </p>
           
           <div className=" w-1/2 lg:ml-96">
-            <button className="m-2 ">like</button>
-            <button className="m-2 "> save</button>
-            <button className="m-2 ">share</button>
+            <button className="m-2 "> <HeartIcon
+              className="h-6 w-6 text-red-500"
+            /> </button>
+            <button className="m-2 ">
+              <BookmarkIcon
+                className="h-6 w-6 text-blue-500"
+              />
+            </button>
+            <button className="m-2 "> <ShareIcon
+              className="h-6 w-6 text-blue-500"
+            /> </button>
           </div>
         </div>
       </div>
