@@ -5,6 +5,7 @@ import Meditate from "./Meditate";
 import Tips from "./Tips";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Navbar";
+import Login from "./Login";
 function App() {
   const [imgUrl, setImgUrl] = useState("/images/campfire_vector.jpg");
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/meditate" component={Meditate} />
         <Route path="/tips" component={Tips} />
       </div>
+      <Login />
     </Router>
   );
 }
