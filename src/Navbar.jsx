@@ -1,6 +1,6 @@
 import React from 'react'
-
-function Navbar() {
+import Menu from './Menu'
+function Navbar(props) {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left fixed sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full z-20 ">
         <div className="mb-2 sm:mb-0">
@@ -38,6 +38,9 @@ function Navbar() {
               className="inline w-8"
               alt="profile"
             />
+          </a>
+          <a>
+          <Menu imgUrl={props.imgUrl} setImgUrl={props.setImgUrl}></Menu>
           </a>
         </div>
       </nav>
