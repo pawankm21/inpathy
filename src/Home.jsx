@@ -23,8 +23,8 @@ function Home() {
         >
           Mild Stress
           <img
-            src={process.env.PUBLIC_URL + "/images/arrow.svg"}
-            className="w-12"
+            src={process.env.PUBLIC_URL + "/images/chevron.svg"}
+            className="w-12 float-right"
             alt=""
           />
         </button>
@@ -35,8 +35,8 @@ function Home() {
         >
           Moderate Stress
           <img
-            src={process.env.PUBLIC_URL + "/images/arrow.svg"}
-            className="w-12"
+            src={process.env.PUBLIC_URL + "/images/chevron.svg"}
+            className="w-12 float-right"
             alt=""
           />
         </button>
@@ -47,8 +47,8 @@ function Home() {
         >
           Severe Stress
           <img
-            src={process.env.PUBLIC_URL + "/images/arrow.svg"}
-            className="w-12"
+            src={process.env.PUBLIC_URL + "/images/chevron.svg"}
+            className="w-12 float-right"
             alt=""
           />
         </button>
@@ -60,8 +60,8 @@ function Home() {
         >
           See an Expert
           <img
-            src={process.env.PUBLIC_URL + "/images/arrow.svg"}
-            className="w-12 h-auto"
+            src={process.env.PUBLIC_URL + "/images/chevron.svg"}
+            className="w-12 float-right inline"
             alt=""
           />
         </button>
