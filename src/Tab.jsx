@@ -1,6 +1,7 @@
+// eslint-disable
 import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import {} from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -29,10 +30,7 @@ export default function Example() {
       },
     ],
   });
-  useEffect(() => {
-    
-  });
-  
+  useEffect(() => {});
 
   return (
     <div className="w-full max-w-lg  sm:px-1 ">

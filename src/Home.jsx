@@ -1,15 +1,16 @@
 import React,{useContext} from "react";
 import { useHistory } from "react-router";
-import { StressContext, } from "./StressContext";
+import { StressContext,} from "./StressContext";
 function Home() {
   const history = useHistory();
-  // const [stress, setStress] = useContext(StressContext);
+  const [, setStress] = useContext(StressContext);
   function handleClick(e) {
-    // setStress(e.target.id)
+    setStress(e.target.id)
     if (e.target.id !== "4") {
       history.push("/meditate");
     }
     else {
+      
       history.push("/tips")
     }
   }

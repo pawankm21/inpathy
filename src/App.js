@@ -1,3 +1,4 @@
+//eslint-disable
 import "./App.css";
 import Home from "./Home";
 import Meditate from "./Meditate";
@@ -6,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Login from "./Login";
 import Register from "./Register";
-import { StressContext } from "./StressContext";
+import { StressProvider } from "./StressContext";
 
 const POSTS = [
   {
@@ -28,6 +29,7 @@ const EXPERTS = [
 
 function App() {
   return (
+    <StressProvider>
     <Router>
       <div className="App">
         <div className="pb-10">
@@ -40,6 +42,7 @@ function App() {
         <Route exact path="/register" component={Register} />
       </div>
     </Router>
+    </StressProvider>
   );
 }
 
