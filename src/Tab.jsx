@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
@@ -10,41 +10,29 @@ export default function Example() {
   let [categories] = useState({
     Tips: [
       {
-        id: 1,
-        title: "Does drinking coffee make you smarter?",
-        date: "5h ago",
-        commentCount: 5,
-        shareCount: 2,
-        link: "https://www.youtube.com",
-      },
-      {
-        id: 2,
-        title: "So you've bought coffee... now what?",
-        date: "2h ago",
-        commentCount: 3,
-        shareCount: 2,
-        link: "https://www.youtube.com",
+        id: "",
+        date: "",
+        title: "",
+        link: "",
+        commentCount: 0,
+        shareCount: 0,
       },
     ],
     Resources: [
       {
-        id: 1,
-        title: "Is tech making coffee better or worse?",
-        date: "Jan 7",
-        commentCount: 29,
-        shareCount: 16,
-        link: "https://www.youtube.com",
-      },
-      {
-        id: 2,
-        title: "The most innovative things happening in coffee",
-        date: "Mar 19",
-        commentCount: 24,
-        shareCount: 12,
-        link: "https://www.youtube.com",
+        id: "",
+        date: "",
+        title: "",
+        link: "",
+        commentCount: 0,
+        shareCount: 0,
       },
     ],
   });
+  useEffect(() => {
+    
+  });
+  
 
   return (
     <div className="w-full max-w-lg  sm:px-1 ">
@@ -84,11 +72,13 @@ export default function Example() {
                       className="relative p-3 rounded-md hover:bg-coolGray-100"
                     >
                       <h3 className="text-lg font-medium leading-5">
-                        <a href={post.link}
+                        <a
+                          href={post.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                        >{post.title}</a>
-                        
+                        >
+                          {post.title}
+                        </a>
                       </h3>
 
                       <ul className="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500">

@@ -39,7 +39,7 @@ function Navbar(props) {
             />
           </Link>
           <div className="inline text-lg no-underline text-grey-darkest hover:text-blue-500  ">
-            <Menu imgUrl={props.imgUrl} setImgUrl={props.setImgUrl}></Menu>
+            <Menu ></Menu>
           </div>
         </div>
       </nav>

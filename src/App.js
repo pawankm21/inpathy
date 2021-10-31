@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Home from "./Home";
 import Meditate from "./Meditate";
@@ -7,22 +6,38 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Login from "./Login";
 import Register from "./Register";
+import { StressContext } from "./StressContext";
+
+const POSTS = [
+  {
+    id: 1,
+    title: "Meditation",
+    stress:"mild",
+    message: "",
+    image: "https://i.imgur.com/qkKy8yH.jpg",
+  }
+]
+const EXPERTS = [
+  {
+    img: "https://i.imgur.com/qkKy8yH.jpg",
+    name: "Meditation",
+    des: "",
+  }
+]
+
+
 function App() {
-  const [imgUrl, setImgUrl] = useState("/images/campfire_vector.jpg");
   return (
     <Router>
       <div className="App">
         <div className="pb-10">
-      <Navbar 
-        imgUrl={imgUrl}
-        setImgUrl={setImgUrl}
-      />
+          <Navbar />
         </div>
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Home} />
         <Route path="/meditate" component={Meditate} />
         <Route path="/tips" component={Tips} />
-        <Route exact path ="/register" component={Register} />
+        <Route exact path="/register" component={Register} />
       </div>
     </Router>
   );
