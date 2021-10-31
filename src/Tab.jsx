@@ -1,7 +1,6 @@
-// eslint-disable
 import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
-import {} from "react-router-dom";
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -11,26 +10,67 @@ export default function Example() {
   let [categories] = useState({
     Tips: [
       {
-        id: "",
-        date: "",
-        title: "",
+        id: "1",
+        date: "12 March",
+        title:
+          "Breathing exercises: Great for acute stress because they work quickly.",
         link: "",
-        commentCount: 0,
-        shareCount: 0,
+        commentCount: 12,
+        shareCount: 2,
+      },
+      {
+        id: "2",
+        date: "12 March",
+        title:
+          "Breathing exercises: Great for acute stress because they work quickly.",
+        link: "",
+        commentCount: 12,
+        shareCount: 2,
+      },
+      {
+        id: "3",
+        date: "12 March",
+        title:
+          "Breathing exercises: Great for acute stress because they work quickly.",
+        link: "",
+        commentCount: 12,
+        shareCount: 2,
       },
     ],
     Resources: [
       {
-        id: "",
+        id: "1",
         date: "",
-        title: "",
+        title:
+          "Breathing exercises: Great for acute stress because they work quickly.",
+        link: "",
+        commentCount: 0,
+        shareCount: 0,
+      },
+      {
+        id: "2",
+        date: "",
+        title:
+          "Breathing exercises: Great for acute stress because they work quickly.",
+        link: "",
+        commentCount: 0,
+        shareCount: 0,
+      },
+      {
+        id: "3",
+        date: "",
+        title:
+          "Breathing exercises: Great for acute stress because they work quickly.",
         link: "",
         commentCount: 0,
         shareCount: 0,
       },
     ],
   });
-  useEffect(() => {});
+  useEffect(() => {
+    
+  });
+  
 
   return (
     <div className="w-full max-w-lg  sm:px-1 ">
