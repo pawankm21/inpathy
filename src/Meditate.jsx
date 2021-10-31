@@ -87,7 +87,7 @@ function Meditate() {
             <>
             <p className="italic relative lg:bottom-12 p-4 bottom-16 mt-1 text-white">
               {
-                "Take it easy,Go slow,Don't rush,Breath in deeply, Breath out slowly,"
+                "Take it easy..."
               }
             </p>
             <p>
